@@ -9,7 +9,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import FooterComp from "../../components/FooterComp";
+// import FooterComp from "../../components/FooterComp";
 const url = 'http://localhost:3000/post'
 export const getStaticProps = async () => {
     const response = await fetch(url);

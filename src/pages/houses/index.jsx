@@ -22,7 +22,6 @@ export const getStaticProps = async () => {
 
 export function SlideNext() {
     const swiper = useSwiper();
-
     return (
 
         <i className="fas fa-chevron-right" onClick={() => swiper.slideNext()}></i>

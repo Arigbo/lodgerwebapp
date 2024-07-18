@@ -1,0 +1,120 @@
+@import "./variables";
+@import "./helpers";
+@import "./resets";
+@import "./search";
+@import "./footer.scss";
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.app {
+    width: 100%;
+    transition: 0.5s ease;
+    background-color: #f1f1f1;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    li,
+    input,a {
+        font-family: chivo; 
+    }
+ 
+
+    .mode_switch {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        position: sticky;
+        right: 0;
+        left: 0;
+        top: 50%;
+        z-index: 3;
+        height: 0rem;
+        bottom: 0;
+   
+.fas{
+    font-size: 2rem;
+}
+        .mode_switch_inner {
+            transition: 0.5s;
+            display: none;
+
+            .fa-moon {
+                color: black;
+                transition: 0.5s;
+            }
+
+            .fa-sun {
+                transition: 0.5s;
+            }
+
+        }
+
+        .mode_switch_hider {
+            border-top-right-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            background-color: #ABB237;
+            padding-inline-end: 0.5rem;
+            padding-block: 0.3rem;
+        }
+
+        .show {
+            background-color: #ABB237;
+            padding-inline: 1rem;
+            padding-inline-start: 0.5rem;
+            padding-block: 0.3rem;
+            display: block;
+        }
+
+    }
+}
+
+.dark {
+    transition: 0.5s ease;
+    background-color: black;
+
+    footer,.search_page_header {
+        background-color: black;
+    }
+
+    button,
+    .search_page_inner_filter_search {
+        i {
+            color: black;
+        }
+    }
+
+    .search_page_inner_filter_filter_button {
+        color: white;
+    }
+
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    li,
+    i {
+        color: white;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}

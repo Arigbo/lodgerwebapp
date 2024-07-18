@@ -1,0 +1,36 @@
+.search_page_nav {
+    position: sticky;
+    bottom: 0;
+    z-index: 3;
+    height: auto;
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    padding-inline: 1.5rem;
+    padding-block-start: 2rem;
+    padding-block-end: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+
+    i {
+        font-size: 0.6875rem;    
+    }
+
+    h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 0.6875rem;
+
+    }
+    .active{
+            i{
+                color: #ABB237;
+            }
+            h1{
+                color: #ABB237;  
+            }
+    }
+}

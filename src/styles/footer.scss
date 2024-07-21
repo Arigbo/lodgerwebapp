@@ -1,4 +1,7 @@
 .search_page_nav {
+    @media screen and (min-width:772px) {
+    display: none;
+            }
     position: sticky;
     bottom: 0;
     z-index: 3;

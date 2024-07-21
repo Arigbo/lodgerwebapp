@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/projects/project/_{id]", "src/pages/houses/index.jsx", "src/components/FooterComp.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/projects/project/_{id]", "src/pages/houses/index.tsx", "src/components/FooterComp.jsx", "src/pages/index.jsx"],
   "exclude": ["node_modules"]
 }

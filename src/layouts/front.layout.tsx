@@ -25,7 +25,7 @@ const FrontLayout: React.FC<{ children: React.ReactElement }> = ({ children }) =
 			<div className="mode_switch">
 				<div className={`${switchhider ? "mode_switch_inner" : "show"}`}>
 					{background ? (
-						<i className="fas fa-moon c-pointer" onClick={lightMode}> </i>
+						<i className="far fa-moon c-pointer" onClick={lightMode}> </i>
 					) : (
 						<i className="fas fa-sun c-pointer" onClick={darkMode}> </i>
 					)

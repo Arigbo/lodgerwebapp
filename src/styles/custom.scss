@@ -7,16 +7,31 @@
 
 
 
-a{
+a {
     text-decoration: none;
     color: black;
-    
+
+}
+
+i {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
 }
 
 .app {
     width: 100%;
     transition: 0.5s ease;
     background-color: #f1f1f1;
+
     h1,
     h2,
     h3,
@@ -26,10 +41,11 @@ a{
     p,
     span,
     li,
-    input,a {
-        font-family: chivo; 
+    input,
+    a {
+        font-family: chivo;
     }
- 
+
 
     .mode_switch {
         display: flex;
@@ -42,10 +58,12 @@ a{
         z-index: 3;
         height: 0rem;
         bottom: 0;
-   
-.far,.fas{
-    font-size: 2rem;
-}
+
+        .far,
+        .fas {
+            font-size: 2rem;
+        }
+
         .mode_switch_inner {
             transition: 0.5s;
             display: none;
@@ -59,6 +77,10 @@ a{
                 transition: 0.5s;
             }
 
+        }
+
+        ul {
+            list-style: none;
         }
 
         .mode_switch_hider {
@@ -84,19 +106,64 @@ a{
     transition: 0.5s ease;
     background-color: black;
 
-    footer,.search_page_header {
+    footer{
         background-color: black;
     }
 
     button,
-    .search_page_inner_filter_search {
-        i {
-            color: black;
-        }
-    }
+    .search_page {
+        &_mobile {
+            &_header {
+                background-color: black;
+            }
+            &_inner_filter_search {
+                i {
+                    color: black;
+                }
 
-    .search_page_inner_filter_filter_button {
-        color: white;
+                &_filter_button {
+                    color: white;
+                }
+            }
+
+        }
+
+        &_dp {
+            &_header {
+                background-color: black;
+
+                &_middle_search {
+                    i {
+                        color: black;
+                    }
+                }
+
+                &_right {
+                    i {
+                        color: #ABB237;
+                    }
+
+                    &_avatar:hover {
+                        background-color: #ABB237;
+                        border: 2px solid white;
+                    }
+
+                    &_avatar {
+                        background-color: white;
+                    }
+                }
+            }
+
+            &_inner {
+                &_dashbd {
+                    background-color: rgb(16, 15, 15);
+                }
+                select{
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
     }
 
     a,

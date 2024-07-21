@@ -17,10 +17,11 @@
                 align-items: center;
                 justify-content: space-between;
                 padding-inline: 3rem;
+                padding-block: 1rem;
                 position: sticky;
                 top: 0;
                 z-index: 4;
-                background-color: whitesmoke;
+                background-color: #f1f1f1;
 
                 &_left {
                     display: flex;
@@ -38,8 +39,8 @@
                         margin-inline-end: 1rem;
 
                         i {
-                            position: absolute;
-                            right: 50rem;
+                            position: relative;
+                            left: 2.5rem;
                             font-size: 1.2rem;
                         }
 
@@ -78,14 +79,21 @@
                     align-items: center;
                     gap: 1rem;
 
+                    &_avatar:hover {
+                        background-color: #ABB237;
+                        border: 2px solid black;
+                    }
+
                     &_avatar {
-                        height: auto;
-                        border: 2px solid;
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        border: 2px solid #ABB237;
                         border-radius: 2rem;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        background-color: white;
+                        background-color: black;
+                        cursor: pointer;
 
                         p {
                             padding: 0;
@@ -99,19 +107,20 @@
 
                     i,
                     p {
-                        font-size: 1.5rem;
+                        font-size: 1.8rem;
                     }
                 }
             }
 
             &_inner {
                 display: grid;
-                grid-template-columns: 0.5fr 2fr;
-                gap: 2rem;
-padding-block-start: 4rem;
+                grid-template-columns: 0.1fr 3.5fr;
+                gap: 5rem;
+                padding-inline: 3.5rem;
+
                 &_dashbd {
                     position: sticky;
-                    top: 15%;
+                    top: 13%;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -119,7 +128,6 @@ padding-block-start: 4rem;
                     padding-block: 2rem;
                     padding-inline: 1rem;
                     height: 67vh;
-                    margin-inline-start: 4rem;
                     border-radius: 1rem;
 
                     &_top,
@@ -131,7 +139,7 @@ padding-block-start: 4rem;
                     }
 
                     &_top {
-                        padding-inline: 0.5rem;
+
                         border-bottom: 1px solid gray;
                         padding-block-end: 1.5rem;
                     }
@@ -140,22 +148,118 @@ padding-block-start: 4rem;
                         color: rgb(162, 46, 46);
                     }
 
+                    i:hover {
+                        background-color: #ABB237;
+                        color: white;
+                        border-radius: 2rem;
+                    }
+
                     i {
-                        font-size: 1.5rem;
+                        transition: all 0.5s;
+                        padding-inline: 0.5rem;
+                        padding-block: 0.5rem;
+                        font-size: 1.3rem;
+                    }
+                    .home{
+                        background-color: #ABB237;
+                        color: white;
+                        border-radius: 2rem;
                     }
                 }
 
                 &_results {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
+                    &_filter {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        justify-content: space-between;
+                        padding-block: 2rem;
 
-                    a {
-                        text-decoration: none;
-                        color: black;
+                        select {
+                            border: 0;
+                            font-size: 1rem;
+                            font-family: chivo;
+                            padding-inline-end: 0.5rem;
+                            background-color: #f1f1f1;
+
+                            option {
+                                border: 0;
+                                padding: 3rem;
+                            }
+
+                            option:hover {
+                                background-color: #ABB237;
+                            }
+                        }
                     }
 
-                    .none {
-                        display: none;
+                    &_inner {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        align-items: center;
+                        gap: 3rem;
+
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+
+                        .none {
+                            display: none;
+                        }
+
+                        &_result {
+                            &_inner {
+                                &_img {
+                                    img {
+                                        border-radius: 1rem;
+                                        width: 100%;
+                                    }
+                                }
+
+                                &_info {
+                                    &_inner {
+                                        padding-inline: 1rem;
+                                        padding-block: 0.5rem;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 0.4rem;
+
+                                        .price {
+                                            font-size: 1.5rem;
+                                        }
+
+                                        .location,
+                                        .ar {
+                                            font-size: 1rem;
+                                            font-weight: 600;
+                                        }
+
+
+                                        &_x-details {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: space-between;
+
+                                            i {
+                                                transition: all 0.5s;
+                                                .active {
+                                                    color: #ABB237;
+                                                }
+                                            }
+
+                                            i:hover {
+                                                color: #ABB237;
+                                            }
+
+                                            h1 {
+                                                font-size: 1rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

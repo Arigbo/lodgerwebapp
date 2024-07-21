@@ -83,7 +83,7 @@ const Search = ({ product }) => {
 
                                 <div className={`${item.availableRooms == 0 ? "none" : "search_page_dp_inner_results_result"}`} key={item.id}>
                                     <div className="search_page_dp_inner_results_result_inner">
-
+{/* 
                                         <Swiper
                                             modules={[Navigation, Pagination, Scrollbar, A11y]}
                                             spaceBetween={0}
@@ -98,7 +98,7 @@ const Search = ({ product }) => {
                                             <div className="scroll">
                                                 <SlidePrev />
                                                 <SlideNext />
-                                            </div>
+                                            </div> */}
                                             <div className="search_page_dp_inner_results_result_inner_img">
                                                 <SwiperSlide><img src={item.frontyard} alt="mmm" /></SwiperSlide>
                                                 <SwiperSlide><img src={item.restroom} alt="mmm" /></SwiperSlide>
@@ -107,8 +107,8 @@ const Search = ({ product }) => {
                                                 <SwiperSlide><img src={item.toilet} alt="mmm" /></SwiperSlide>
                                                 <SwiperSlide><img src={item.backyard} alt="mmm" /></SwiperSlide>
                                             </div>
-
-                                        </Swiper>
+{/* 
+                                        </Swiper> */}
 
                                         <Link href={`/blogs/${item.id}`} >
                                             <div className="search_page_dp_inner_results_result_inner_info">

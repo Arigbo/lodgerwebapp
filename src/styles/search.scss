@@ -17,6 +17,10 @@
                 align-items: center;
                 justify-content: space-between;
                 padding-inline: 3rem;
+                position: sticky;
+                top: 0;
+                z-index: 4;
+                background-color: whitesmoke;
 
                 &_left {
                     display: flex;
@@ -102,11 +106,12 @@
 
             &_inner {
                 display: grid;
-                grid-template-columns: 1fr 1.5fr;
-
+                grid-template-columns: 0.5fr 2fr;
+                gap: 2rem;
+padding-block-start: 4rem;
                 &_dashbd {
                     position: sticky;
-                    top: 10%;
+                    top: 15%;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -114,7 +119,7 @@
                     padding-block: 2rem;
                     padding-inline: 1rem;
                     height: 67vh;
-                    margin: 2rem;
+                    margin-inline-start: 4rem;
                     border-radius: 1rem;
 
                     &_top,
@@ -139,10 +144,11 @@
                         font-size: 1.5rem;
                     }
                 }
+
                 &_results {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+
                     a {
                         text-decoration: none;
                         color: black;
